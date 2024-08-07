@@ -1,8 +1,22 @@
 # Full Example: https://github.com/geekan/MetaGPT/blob/main/config/config2.example.yaml
 # Reflected Code: https://github.com/geekan/MetaGPT/blob/main/metagpt/config2.py
 # Config Docs: https://docs.deepwisdom.ai/main/en/guide/get_started/configuration.html
+
+# GPT
+# llm:
+#     api_type: "openai"  # or azure / ollama / groq etc.
+#     model: "gpt-3.5-turbo"  # "gpt-4-turbo"  # or gpt-3.5-turbo
+#     base_url: "https://api.openai.com/v1"  # or forward url / other llm url
+#     api_key: ""
+
+
+# LLAMA API
+# https://blog.csdn.net/baidu_20834545/article/details/138201715
+# https://blog.csdn.net/baidu_20834545/article/details/138185338
+# https://blog.csdn.net/baidu_20834545/article/details/138175723
+# https://docs.deepwisdom.ai/main/en/guide/tutorials/integration_with_open_llm.html#ollama
 llm:
-  api_type: "openai"  # or azure / ollama / groq etc.
-  model: "gpt-4-turbo"  # or gpt-3.5-turbo
-  base_url: "https://api.openai.com/v1"  # or forward url / other llm url
-  api_key: "YOUR_API_KEY"
+    api_type: ollama
+    base_url: 'http://127.0.0.1:11434/api'
+    model: 'llama3.1'
+
