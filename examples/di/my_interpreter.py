@@ -30,7 +30,6 @@ def ask(requirement: str = ""):
     asyncio.run(main(requirement))
 
 
-
 if __name__ == "__main__":
     requirement = f"How many records in this data E:/Capstone/data/recentT6.csv?"
     # requirement = f"Show me the pie chart about the different value percentage of ON_HOLD field in this dataset E:/Capstone/data/recentT6.csv."
